@@ -21,6 +21,7 @@ from . import views
 
 """DRG"""
 urlpatterns = [
+    path('admin/', admin.site.urls),
     path('form', views.form, name='form'),
     path('prediction', views.prediction, name='prediction'),
 ]
